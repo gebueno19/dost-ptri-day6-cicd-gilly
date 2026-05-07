@@ -20,6 +20,14 @@ def health():
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080)
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6b2df5ce38c16af156bae40c553ac46abecd5ec6
 @app.route("/version")
 def version():
     return jsonify({"version": "1.1.0", "day": "Day 6"})
+
+@app.route("/version")
+def version():
+    return jsonify({"version": "2.0.0", "deployed_by": "CodeDeploy"})
